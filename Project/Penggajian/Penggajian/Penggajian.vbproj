@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F53AE92-2816-49E6-88BA-62FDDCF5070B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Penggajian.My.MyApplication</StartupObject>
+    <RootNamespace>Penggajian</RootNamespace>
+    <AssemblyName>Penggajian</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Penggajian.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Penggajian.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\FormImportKaryawan.Designer.vb">
+      <DependentUpon>FormImportKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormImportKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLaporanAbsen.Designer.vb">
+      <DependentUpon>FormLaporanAbsen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLaporanAbsen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLaporanGaji.Designer.vb">
+      <DependentUpon>FormLaporanGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLaporanGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakAbsen.Designer.vb">
+      <DependentUpon>CetakAbsen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakAbsen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakGaji.Designer.vb">
+      <DependentUpon>CetakGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakJabatan.Designer.vb">
+      <DependentUpon>CetakJabatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakJabatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakKaryawan.Designer.vb">
+      <DependentUpon>CetakKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakLaporanGaji.Designer.vb">
+      <DependentUpon>CetakLaporanGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakLaporanGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakPendapatan.Designer.vb">
+      <DependentUpon>CetakPendapatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakPendapatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakPotongan.Designer.vb">
+      <DependentUpon>CetakPotongan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakPotongan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakUser.Designer.vb">
+      <DependentUpon>CetakUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportAbsen.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportAbsen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportCetak Gaji.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCetak Gaji.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\FormAbsen.Designer.vb">
+      <DependentUpon>FormAbsen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormAbsen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDepartemen.Designer.vb">
+      <DependentUpon>FormDepartemen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormDepartemen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormGaji.Designer.vb">
+      <DependentUpon>FormGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormJabatan.Designer.vb">
+      <DependentUpon>FormJabatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormJabatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormKaryawan.Designer.vb">
+      <DependentUpon>FormKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormPendapatan.Designer.vb">
+      <DependentUpon>FormPendapatan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormPendapatan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormPotongan.Designer.vb">
+      <DependentUpon>FormPotongan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormPotongan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormUser.Designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ListAbsenGaji.Designer.vb">
+      <DependentUpon>ListAbsenGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ListAbsenGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ListKaryawanGaji.Designer.vb">
+      <DependentUpon>ListKaryawanGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ListKaryawanGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koneksi\Class1.vb" />
+    <Compile Include="Form\ListPendapatanGaji.Designer.vb">
+      <DependentUpon>ListPendapatanGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ListPendapatanGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ListPotonganGaji.Designer.vb">
+      <DependentUpon>ListPotonganGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ListPotonganGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MenuUtama.Designer.vb">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportDept.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportDept.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportJab.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportJab.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportKaryawan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportKaryawan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CetakDept.Designer.vb">
+      <DependentUpon>CetakDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\CetakDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportLaporanGaji.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLaporanGaji.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportPendapatan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPendapatan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportPotongan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPotongan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\CrystalReportUser.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportUser.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\FormImportKaryawan.resx">
+      <DependentUpon>FormImportKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLaporanAbsen.resx">
+      <DependentUpon>FormLaporanAbsen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLaporanGaji.resx">
+      <DependentUpon>FormLaporanGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakAbsen.resx">
+      <DependentUpon>CetakAbsen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakGaji.resx">
+      <DependentUpon>CetakGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakJabatan.resx">
+      <DependentUpon>CetakJabatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakKaryawan.resx">
+      <DependentUpon>CetakKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakLaporanGaji.resx">
+      <DependentUpon>CetakLaporanGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakPendapatan.resx">
+      <DependentUpon>CetakPendapatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakPotongan.resx">
+      <DependentUpon>CetakPotongan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakUser.resx">
+      <DependentUpon>CetakUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportAbsen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportAbsen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportCetak Gaji.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCetak Gaji.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormAbsen.resx">
+      <DependentUpon>FormAbsen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormDepartemen.resx">
+      <DependentUpon>FormDepartemen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormGaji.resx">
+      <DependentUpon>FormGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormJabatan.resx">
+      <DependentUpon>FormJabatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormKaryawan.resx">
+      <DependentUpon>FormKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormPendapatan.resx">
+      <DependentUpon>FormPendapatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormPotongan.resx">
+      <DependentUpon>FormPotongan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormUser.resx">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ListAbsenGaji.resx">
+      <DependentUpon>ListAbsenGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ListKaryawanGaji.resx">
+      <DependentUpon>ListKaryawanGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ListPendapatanGaji.resx">
+      <DependentUpon>ListPendapatanGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ListPotonganGaji.resx">
+      <DependentUpon>ListPotonganGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MenuUtama.resx">
+      <DependentUpon>MenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportDept.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportDept.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportJab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportJab.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportKaryawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportKaryawan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CetakDept.resx">
+      <DependentUpon>CetakDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportLaporanGaji.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLaporanGaji.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportPendapatan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPendapatan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportPotongan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPotongan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\CrystalReportUser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportUser.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
