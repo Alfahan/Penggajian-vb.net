@@ -1,7 +1,8 @@
 Penggajian-vb.net
 
 This is a desktop based payroll program. Created with the Visual Basic.NET programming language
-this is the program view
+
+This is the program view
 
 
 ![Login](https://user-images.githubusercontent.com/49190810/93655219-6f4d0b00-fa4c-11ea-9468-ad81e2988f5e.jpg)
